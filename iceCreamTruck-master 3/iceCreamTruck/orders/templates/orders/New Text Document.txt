@@ -1,0 +1,7 @@
+<h1>{{ question.question_text }}</h1>
+<ul>
+	<li>{{question.product_id}}</li>
+	<li>{{ question.quantity }}</li>
+	<li>{{ question.total_cost }}</li>
+	<li>{{ question.current_date }}</li>
+</ul>

@@ -1,0 +1,11 @@
+{% if latest_order_list %}
+    <ul>
+	<h2>Our current orders</h2>
+    {% for order in latest_order_list %}
+	<li><a href="{% url 'orders:detail' order.id %}">{{ order.id }}</a></li>
+    {% endfor %}
+    </ul>
+<h1><a href="{% url 'orders:input' %}">Fill in Order Form</h1>
+{% else %}
+    <p>No polls are available.</p>
+{% endif %}
